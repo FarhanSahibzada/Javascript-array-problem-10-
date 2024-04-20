@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2> check which number is divisible with , three and five</h2>
+
+
+<script>
+
+let arr = [20,3,33,43,2,4,25,24,21,45,5,32,76,54,34,45,56,64,];
+
+let done = [];
+document.write( "<h2>" + arr + "</h2>") ; 
+
+
+for( let i = 0 ; i < arr.length ; i++){
+
+
+if( arr[i]%3 === 0  && arr[i]%5 === 0){
+
+    arr[i] = "ThreeFive"
+}
+
+else if( arr[i]%3 === 0){
+
+arr[i] = "Three"
+    
+}
+else if ( arr[i]%5 === 0 ){
+
+arr[i] = "Five"
+
+}
+
+
+
+}
+
+
+
+document.write(" <h2><br> <br>"+ arr + "</h2>")
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
